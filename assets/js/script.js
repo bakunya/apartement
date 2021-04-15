@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const clientWidth = document.documentElement.clientWidth;
+
     const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 2,
+        slidesPerView: clientWidth < 780 ? 1 : 2,
         centeredSlides: true,
         spaceBetween: 20,
         nextButton: '.swiper-button-next',
