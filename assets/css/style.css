@@ -1,0 +1,259 @@
+.custom-nav {
+    background: #293948;
+}
+
+.custom-nav-item {
+    color: rgba(255,255,255,.85) !important;
+}
+
+.mobile-nav {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mobile-nav .login {
+    grid-area: 4 / 1 /span 4 /span 2;
+}
+
+.login {
+    background: #596A76;
+}
+
+.login > * {
+    font-weight: bold;
+}
+
+.custom-nav-item:hover,
+.custom-nav-item:focus,
+.custom-nav-item:active {color: rgba(255,255,255,1) !important;}
+
+.custom-container-img {
+    height: 550px;
+}
+
+.custom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.custom-section {
+    display: grid;
+    place-content: center;
+}
+
+.custom-bold {
+    font-weight: bold;
+}
+
+.custom-bold > span{
+    color: gray;
+}
+
+.custom-input-group > input:active,
+.custom-input-group > input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.custom-input-group > button {
+    background: #596A76;
+    color: white;
+}
+
+.custom-input-group > button:hover,
+.custom-input-group > button:active{
+    background: #596A76;
+    color: white;
+}
+
+.content-2,
+.content-3,
+.content-4,
+.content-5,
+.content-6,
+footer {
+    margin-top: 15rem;
+}
+
+.custom-margin {
+    margin-top: 8rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "img-1 img-1 img-3"
+    "img-1 img-1 img-3"
+    "img-2 img-2 img-3";
+    gap: 7px;
+    height: 100%;
+}
+
+.grid > .img-1 {
+    grid-area: img-1;
+}
+
+.grid > .img-2 {
+    grid-area: img-2;
+}
+
+.grid > .img-3 {
+    grid-area: img-3;
+}
+
+.content-3 i {
+    font-size: 1.5rem;
+    color: green;
+}
+
+.content-3 .custom-container-img {
+    border-radius: 50px 0 0 50px;
+    position: relative;
+    background: #596A76;
+}
+
+.content-3 .custom-container-img img {
+    height: 75%;
+    bottom: 0;
+    position: absolute;
+}
+
+.max-width-p {
+    max-width: 300px;
+    font-size: .8rem;
+    color: gray;
+}
+
+.max-width-p i {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.swiper-slide img {
+    object-fit: cover; 
+    object-position: center;
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 50%;
+}
+
+.card {
+    transition: all 300ms ease-in-out;
+    transform: scale(0.7);
+}
+
+.active {
+    transform: scale(1);
+    -webkit-box-shadow: 15px 15px 27px -3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 15px 15px 27px -3px rgba(0,0,0,0.3);
+    box-shadow: 15px 15px 27px -3px rgba(0,0,0,0.3);
+}
+
+.content-4 .action > * {
+    font-size: 2rem;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.content-4 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.rating i {
+    color: yellow;
+    margin: 0 5px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    margin: auto;
+}
+
+footer {
+    background: #596A76;
+}
+
+footer .custom-input-group  {
+    right: 0px;
+    width: 100%;
+    height: 30px;
+}
+
+footer .custom-input-group button {
+    background: #293948;
+}
+
+footer i {
+    font-size: 1.8rem;
+}
+
+footer .link-menu * {
+    text-align: center !important;
+}
+
+footer .link-menu::after {
+    content: "";
+    border-bottom: 3px solid white;
+    width: 50%;
+    margin: 5rem auto;
+    display: block;
+}
+
+.price-lg {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    footer .custom-input-group  {
+        right: 0px;
+        width: 80%;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .mobile-nav {
+        display: flex !important;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .custom-nav {
+        max-width: fit-content;
+        max-width: -moz-fit-content;
+    }
+
+    footer .custom-input-group  {
+        right: 0px;
+        width: 60%;
+        height: 80px;
+    }
+
+    .price-sm {
+        display: none;
+    }
+
+    .price-lg {
+        display: block;
+    }
+}
